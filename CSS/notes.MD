@@ -98,3 +98,8 @@ p[draggable="false"]{
 
 ## Video 3 : CSS Properties
 ### CSS Colors links: https://colorhunt.co/
+### Font Sizes
+ - 1 px(pixel) -> 1/96th inch = 0.26mm
+ - 1 pt(point) -> 1/72nd inch = 0.35mm
+ - 1 em (100% of parent) if parent 20 px then 1 em is 20px or if its 2 em its 2* (100 % of parent) -> 2*20px =40px
+ - 1rem (100% of root) if the changes will affect rem values. Can use this for effectiveness instead of above
