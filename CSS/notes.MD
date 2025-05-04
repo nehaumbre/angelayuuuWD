@@ -29,7 +29,7 @@
 </html>
 ```
 
-## Video 1 : CSS Selectors
+## Video 2 : CSS Selectors
 
 - Element Selectors : here h1 is an element (makes color red for all h1 occurences)
 
@@ -95,3 +95,6 @@ p[draggable="false"]{
 ```
 
 - Universal Selector (*): it means to select all
+
+## Video 3 : CSS Properties
+### CSS Colors links: https://colorhunt.co/
