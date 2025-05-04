@@ -103,3 +103,8 @@ p[draggable="false"]{
  - 1 pt(point) -> 1/72nd inch = 0.35mm
  - 1 em (100% of parent) if parent 20 px then 1 em is 20px or if its 2 em its 2* (100 % of parent) -> 2*20px =40px
  - 1rem (100% of root) if the changes will affect rem values. Can use this for effectiveness instead of above
+### Font Weights 
+ - Keywords : normal, bold
+ - Relative to parent : lighter(-100), bolder(+100)
+ - number choose from 100-900 to determine how much bolder/lighter you want
+### Font Family

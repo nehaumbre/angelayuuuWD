@@ -2,9 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Font Family</title>
   <style>
+    h1 {
+      font-family: "Exo 2", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style:oblique;
+      text-align:center;
+    }
+
     #helvetica {
       font-family: Helvetica, sans-serif;
     }
@@ -33,9 +41,14 @@
       font-family: fantasy;
     }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body>
+  <h1>Font Family</h1>
   <p id="helvetica">Helvetica</p>
   <p id="arial">Arial</p>
   <p id="serif">Serif</p>
@@ -43,7 +56,6 @@
   <p id="cursive">Cursive</p>
   <p id="monospace">Monospace</p>
   <p id="fantasy">Fantasy</p>
-
 </body>
 
 </html>
