@@ -108,3 +108,5 @@ p[draggable="false"]{
  - Relative to parent : lighter(-100), bolder(+100)
  - number choose from 100-900 to determine how much bolder/lighter you want
 ### Font Family
+
+## Video 4 : The Box model - Margin, Padding and Border
