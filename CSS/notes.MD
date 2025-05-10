@@ -110,3 +110,39 @@ p[draggable="false"]{
 ### Font Family
 
 ## Video 4 : The Box model - Margin, Padding and Border
+## Video 5: The Cascade : 
+##### Position - 
+```
+li {
+  color: blue; 
+  color: pink; //pink replaces blue i.e. lower code replaces the upper one
+}
+```
+##### Specificity - order of specificity as below 
+        ___#id >> attribute >> .class >> element___
+```
+~ html
+<li id="first-id" class="first-class" draggable></li>
+
+~ css
+li {
+  color: blue;  //element selector
+}
+.first-class{
+    color: green; //class selector
+}
+
+li[draggable]{
+  color: yellow; //attribute selector
+}
+
+#firsy-id {
+    color: pink;  //id selector: one page should only have one unique id
+}
+
+```
+##### Type -
+##### Importance -
+
+
+
