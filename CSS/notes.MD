@@ -141,8 +141,23 @@ li[draggable]{
 }
 
 ```
-##### Type -
-##### Importance -
+##### Type - Inline >> internal >> external
+```
+<link rel="stylesheet" href="style.css">  /**EXTERNAL**/
 
+<style></style> /**INTERNAL**/
+
+<h1 style= "">Hello</h1>  /**INLINE**/     
+
+```
+
+##### Importance - use !important keyword
+```
+h1{
+  color: orange;
+  color: cyan; !important
+  color: yellow;
+}
+```
 
 
