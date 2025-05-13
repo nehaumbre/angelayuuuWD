@@ -1,0 +1,29 @@
+/* Write your code here: */
+h1 ,h2{  
+    color: blueviolet;
+}
+/* *above example is of group selectors. You can have multiple elements
+   *as selectors in your code  */
+
+.box > p {
+    color: firebrick;
+}
+/* *Child => Apply to direct child of left side */
+
+.box li {
+    color: blue;
+}
+/* *Descendent => Apply to a descendent of left side */
+
+li.done{
+    color: seagreen;
+}
+
+/* *Chaining (being very very specific) => Apply where all selectors are true */
+
+ul p.done{
+    font-size: .5rem;
+}
+
+/* combining the above 4 types */
+
