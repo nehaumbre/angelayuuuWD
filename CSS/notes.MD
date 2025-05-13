@@ -159,5 +159,16 @@ h1{
   color: yellow;
 }
 ```
+## Video 6: CSS Positioning : Relative, Absolute, fixed and static Positioning (see link for more)
+https://appbrewery.github.io/css-positioning/ 
 
+#### Static Positioning (Default)
+#### Relative Positioning : Position relative to default position (see link for example)
+#### Absolute Positioning : Position relative to nearest Positioned ancestor or top-left corner of webpage (see link for example)
+   - ZIndex -brings the element above or below in Z-axis.
+   - Absolute Positioning pulls the element out of normal html flow and to bring back we have to set position to anything other than absolute (static or relative).
+#### Fixed Positioning: Position relative to top-left corner of browser (see link for example)
+```
+Hint: (Scroll to see the difference between absolute and fixed positioning)
+```
 
