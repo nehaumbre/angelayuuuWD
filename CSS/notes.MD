@@ -172,3 +172,11 @@ https://appbrewery.github.io/css-positioning/
 Hint: (Scroll to see the difference between absolute and fixed positioning)
 ```
 
+## Video 7: CSS Display  (see link for example)
+- Inline : in the same line (cant set width or height. it adjusts to the content size)
+- Block : takes up entire block
+- Inline-block : can set width and height and also same line
+- None - makes the content dissapear for debugging purpose
+```
+https://appbrewery.github.io/css-display/
+```
