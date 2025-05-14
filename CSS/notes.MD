@@ -180,3 +180,10 @@ Hint: (Scroll to see the difference between absolute and fixed positioning)
 ```
 https://appbrewery.github.io/css-display/
 ```
+
+## Video 8: Responsiveness of a Website can be achieved by no. of methods given below
+#### https://tastybasics.nl/  (see link to play with responsiveness)
+- Media Queries
+- CSS Grid
+- CSS Flexbox
+- Bootstrap (External Frameworks)
