@@ -103,3 +103,36 @@ footer {
     font-size: 2rem;
   }
 }
+
+@media (min-width: 1201px) and (max-width: 2400px) {
+  .logo {
+      width: 200px;
+    }
+  
+  h1{
+    font-size: 3rem;
+  }
+
+  .highlight{
+    display: block;
+  }
+
+  .card-text {
+    max-width: 600px;
+    font-family: monospace;
+  }
+
+  .card-title {
+    font-family: monospace;
+  }
+
+  .right>p {
+    max-width: 600px;
+    font-family: monospace;
+  }
+
+  footer {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
