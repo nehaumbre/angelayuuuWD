@@ -184,6 +184,12 @@ https://appbrewery.github.io/css-display/
 ## Video 8: Responsiveness of a Website can be achieved by no. of methods given below
 #### https://tastybasics.nl/  (see link to play with responsiveness)
 - Media Queries
+   * In width of 0-2400px max-width (600px) targets screen size from 0-600px(small screen)
+     min-width(600px) targets bigger screensize 0r screensize greater than 600px
+   * [Combine min and max] min-width(600px) and max-width (900px)=>  between 600-900px
+   * max-width(600px) and min-width (900px) - space other than between 600-900px (outside space)
+   * screen keyword/ print keyword
+   * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries (link for media queries resource)
 - CSS Grid
 - CSS Flexbox
 - Bootstrap (External Frameworks)
