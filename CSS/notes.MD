@@ -193,3 +193,28 @@ https://appbrewery.github.io/css-display/
 - CSS Grid
 - CSS Flexbox
 - Bootstrap (External Frameworks)
+
+## Video 9: Flexbox
+
+![Default display properties](/images/Capture.PNG)
+* div -> display: block 
+* span -> display: inline 
+* p -> display: block 
+* img -> display: inline 
+
+![flexbox](/images/Flexbox.png)
+
+- after applying display as flex the above happens 
+- width of each element is equal to content size
+
+![Flexbox: gap](/images/gap.PNG)
+
+- gap can be added between elements as shown above
+
+- display : flex (its a block that occupies the entire line(no neighbour allowed) similar like display:block)
+
+![Flexbox: gap](/images/100block.PNG)
+
+- display : inline-flex (it can allow a neigbour to come beside it just like display: inline-block)
+
+![Flexbox: gap](/images/inline-flex.PNG)
