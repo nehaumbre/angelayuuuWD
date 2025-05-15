@@ -194,7 +194,7 @@ https://appbrewery.github.io/css-display/
 - CSS Flexbox
 - Bootstrap (External Frameworks)
 
-## Video 9: Flexbox
+## Video 9: Flexbox Intoduction
 
 ![Default display properties](/images/Capture.PNG)
 * div -> display: block 
@@ -218,3 +218,5 @@ https://appbrewery.github.io/css-display/
 - display : inline-flex (it can allow a neigbour to come beside it just like display: inline-block)
 
 ![Flexbox: gap](/images/inline-flex.PNG)
+
+## Video 10: Flexbox: Flex Direction (Row and Column Layouts)
