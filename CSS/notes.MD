@@ -220,3 +220,28 @@ https://appbrewery.github.io/css-display/
 ![Flexbox: gap](/images/inline-flex.PNG)
 
 ## Video 10: Flexbox: Flex Direction (Row and Column Layouts)
+- flex-direction: row;
+
+![Flexbox:flex-direction: row; ](/images/flexdirectionrow.PNG)
+
+- flex-direction: column;
+
+![Flexbox:flex-direction: column; ](/images/flexdirectioncolumn.PNG)
+
+- why the main and cross axis matter? : to customize our flexbox items
+
+#### Flex basis (increases height or width with respect to main axis):
+- flex-basis : 100px (flex-direction: column- main axis)
+
+![Flexbox:flex-basis ](/images/flexbasis1.PNG)
+
+- Above the height is changed
+
+- flex-basis : 100px (flex-direction: row- main axis). Hence the width is changed
+
+![Flexbox:flex-basis ](/images/flexbasis2.PNG)
+
+[IMPORTANT]: **Basis should be applied to child and not the container**
+
+
+
