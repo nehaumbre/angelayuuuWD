@@ -244,4 +244,85 @@ https://appbrewery.github.io/css-display/
 [IMPORTANT]: **Basis should be applied to child and not the container**
 
 
+## Video 11: Flexbox: Flex Layout **[Align, Justify, wrap]**
+- **It is important to understand parent(container) and child(flexitem)relationship in flexbox** 
+- order property - can change order of elements 
+- flex-wrap: wrap - moves elements to next line in the row if previous row is full.
+- play with this site [Flex Layout:Align, Justify, wrap examples](https://appbrewery.github.io/flex-layout/)
+- `align-items: flex start` - we need to set viewport height for this property ex.`height: 70vh` because if we do se
+   we can align our items if we have our container big  
+- [FlexBox resource](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- Align-content[works only when `flex-wrap: wrap`] 
 
+###[Flexbox Game ](https://appbrewery.github.io/flexboxfroggy/)
+
+## FLEX SIZING (Shrink or Grow) : Content width < width/ height < flex basis < min/max width
+* below `min width` `max width` values are defaults but we can set it manually too(ex. ```min-width:200px```)
+- `max width` looks for longest possible **sentence**
+- `min width` looks for longest possible __word__
+- if ```flex-basis(50px) < max-width(200px)``` flex basis will be implemented because max width of an item is 200px and flex 
+  basis is still within the size range 
+- flex-grow and flex shrink - shrink or grows to min/max with respect to combinations used
+  ```
+   flex-basis:0;
+   combo1
+ 
+   flex-grow: 0
+   flex-shrink: 0
+
+   combo2
+   flex-grow: 0
+   flex-shrink: 1
+
+   combo3
+   flex-grow: 1
+   flex-shrink: 0
+
+   combo4
+   flex-grow: 1
+   flex-shrink: 1
+   
+  ``` 
+
+- Shortened above method
+```
+flex-basis:100px;
+flex-grow: 0
+flex-shrink: 0
+
+to 
+flex: 1 1 0; where values are (grow,shrink, basis) in order
+
+even further shortcut
+flex: 1
+```
+[Sizing exercise flexbox](https://appbrewery.github.io/flexbox-sizing-exercise/)
+Solution code for above link
+```
+/* Write your CSS code below to make the blue items size, grow and shrink like the green ones.*/
+
+.container {
+  justify-content: space-between;
+}
+  
+.container > * {
+
+}
+
+.item1 {
+ flex-basis: 200px;
+ flex-shrink: 1;
+}
+
+.item2 {
+  flex-basis: 200px;
+  flex-shrink: 0;
+}
+
+.item3 {
+  flex-basis: 400px;
+  flex-shrink: 0;
+}
+
+
+```
