@@ -15,7 +15,7 @@
 
       body > div {
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         height: 90vh;
         align-items: center;
         justify-content: space-evenly;
@@ -25,34 +25,35 @@
         background-color: rgba(166, 205, 232, 0.946);
         border-radius: 10px;
         place-items: center;
-        width: 350px; height: 300px;
+        width: 350px; 
+        padding: 1rem;
       }
 
       .plan-button{
-        font-size: larger;
-        position: relative;
-        top: 60px;
-        padding: 8px 15px 8px 13px;
-        border-radius: 5px;
+        font-size: 1rem;
+        padding: 8px 16px;
+        border-radius: 5px; border: none;
         background-color: rgb(255, 113, 61);
+        color: white;
       }
 
       .plan-title {
-        position: relative; top: 20px;
         font-size: larger; font-weight: 600;
         letter-spacing: 3px;
       }
 
       .plan-price{
-        position: relative; top:40px;
-        font-size: large; font-weight: 300;
+        line-height: 1.5;
+        font-size: 2rem; font-weight: 800;
       }
 
       .plan-features{
-        position: relative; top:40px;
-        font-size: larger;
+        font-size: 14px;
         list-style: none;
         padding-left: 0;
+        text-align: center;
+        line-height: 2;
+        margin-top: 0;
       }
       
 
