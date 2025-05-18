@@ -15,10 +15,10 @@
 
       body > div {
         display: flex;
-        /* justify-content: center; */
-        height: 90vh;
+        justify-content: center; 
+        height: 100vh;
         align-items: center;
-        justify-content: space-evenly;
+        gap: 2rem;
       }
 
       .pricing-plan {
@@ -59,6 +59,10 @@
 
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
+        body > div {
+          flex-direction: column;
+          height: 100%;
+        }
       }
     </style>
   </head>
