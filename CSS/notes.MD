@@ -326,3 +326,13 @@ Solution code for above link
 
 
 ```
+
+
+## Video 12 : GRID (A 2 Dimensional Layout system):
+- you can use a Flexbox to layout items in 1 Dimensional space and Grid in a 2D space
+- Use both Flexbox + Grid to create a good site
+- [GRID-VS-Flexbox ..Play here](https://appbrewery.github.io/grid-vs-flexbox/)
+- If you see below the boxes of flexbox are not aligned one below other perfectly like grid
+
+![gridvsflexbox](/images/gridvsflexbox.PNG)
+
