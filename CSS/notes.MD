@@ -339,3 +339,6 @@ Solution code for above link
 GRID SIZING [sizing exercise](https://appbrewery.github.io/grid-sizing/test.html)
 
 GRID Placement: [CSS GArden Game](https://appbrewery.github.io/gridgarden/)
+
+
+# BOOTSTRAP [External Layout System]
