@@ -336,3 +336,6 @@ Solution code for above link
 
 ![gridvsflexbox](/images/gridvsflexbox.PNG)
 
+GRID SIZING [sizing exercise](https://appbrewery.github.io/grid-sizing/test.html)
+
+GRID Placement: [CSS GArden Game](https://appbrewery.github.io/gridgarden/)
