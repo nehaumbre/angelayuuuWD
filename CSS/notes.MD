@@ -342,3 +342,30 @@ GRID Placement: [CSS GArden Game](https://appbrewery.github.io/gridgarden/)
 
 
 # BOOTSTRAP [External Layout System]
+- Its a 12 column Layout System
+![BOOTSTRAP](/images/Bootstrap12Col.PNG)
+
+```
+<div class="container">
+  <div class="row">
+    <div class="column">
+    Hello  
+    </div>
+  </div>
+</div>
+```
+- gives each column in a row equal width
+- Bootstrap Container is responsive
+![BOOTSTRAP Container](/images/BContainer.PNG)
+- Sized Columns - Give each div some columns out of 12 to occupy thar space
+- Bootstrap Breakpoints 
+![BOOTSTRAP Breakpoints](/images/breakpoints.PNG)
+
+[try Bootstrap Layout Exercise: CLick HERE...](https://appbrewery.github.io/bootstrap-layout/)
+
+#BOOTSTRAP Components(Learn to use pre-built and pre-styled components)
+
+### BUTTONS
+![BOOTSTRAP Buttons](/images/buttonsboo.PNG)
+
+### NAVS
