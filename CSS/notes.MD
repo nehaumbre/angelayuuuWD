@@ -366,6 +366,10 @@ GRID Placement: [CSS GArden Game](https://appbrewery.github.io/gridgarden/)
 #BOOTSTRAP Components(Learn to use pre-built and pre-styled components)
 
 ### BUTTONS
+
 ![BOOTSTRAP Buttons](/images/buttonsboo.PNG)
 
-### NAVS
+### Spacing
+
+![BOOTSTRAP spacing](/images/notation.PNG)
+

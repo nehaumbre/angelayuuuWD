@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-bs-theme="dark">  
+  <!-- data-bs-theme="dark" is dark mode -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="bus-front.svg" height="30px" alt="logo">MoveIT</a>
+      <a class="navbar-brand" href="#"><img src="box-seam.svg" height="30px" alt="logo">MoveIT</a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -44,8 +44,8 @@
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2" type="search" placeholder="PostalCode" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">OK</button>
         </form>
       </div>
     </div>
@@ -54,9 +54,11 @@
     <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis">LOVE the MOVE </h1>
-        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere dignissimos maxime aperiam
-          suscipit! Nemo magni necessitatibus itaque ab! Dolore quasi
-          fugit officia assumenda accusantium explicabo eum id voluptates nulla nostrum.</p>
+        <p class="lead">Welcome to our website, where we are on a mission to provide exceptional moving services to
+          customers in the US. As a
+          startup, we believe that moving doesn't have to be stressful or complicated, and we are passionate about
+          making the
+          process as seamless and enjoyable as possible.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"> <button type="button"
             class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Get a Quote</button> <button type="button"
             class="btn btn-outline-secondary btn-lg px-4">Contact Us </button> </div>
@@ -70,9 +72,7 @@
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#collection"></use>
-          </svg>
+          <img src="chat-square-heart.svg" height="30px" alt="chat-square-heart">
         </div>
         <h2>Professional</h2>
         <p>Our team of professional movers are trained to prioritize efficiency, organization, and attention to detail.
@@ -85,16 +85,11 @@
         <a href="#" class="icon-link">
           Get a quote
           <img src="chevron-right.svg" alt="chevron-right">
-          <!-- <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#chevron-right"></use>
-          </svg> -->
         </a>
       </div>
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#people-circle"></use>
-          </svg>
+          <img src="bus-front.svg" height="30px" alt="bus-front">
         </div>
         <h2>Countrywide</h2>
         <p>We offer a range of services to suit your individual needs, whether you're moving locally or across the
@@ -106,16 +101,12 @@
           rate for our services.</p>
         <a href="#" class="icon-link">
           Get a quote
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#chevron-right"></use>
-          </svg>
+          <img src="chevron-right.svg" alt="chevron-right">
         </a>
       </div>
       <div class="feature col">
         <div class="feature-icon bg-primary bg-gradient">
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#toggles2"></use>
-          </svg>
+          <img src="briefcase.svg" alt="briefcase" height="30px">
         </div>
         <h2>Personal Touch</h2>
         <p>At our core, we believe that moving should be an exciting and positive experience, not a stressful one. By
@@ -127,12 +118,47 @@
           move.</p>
         <a href="#" class="icon-link">
           Get a quote
-          <svg class="bi" width="1em" height="1em">
-            <use xlink:href="#chevron-right"></use>
-          </svg>
+          <img src="chevron-right.svg" alt="chevron-right">
         </a>
       </div>
     </div>
+  </div>
+  <div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="family.jpg" class="d-flex w-100" alt="family">
+        </div>
+        <div class="carousel-item">
+          <img src="dog.jpg" class="d-flex w-100" alt="dog">
+        </div>
+        <div class="carousel-item">
+          <img src="couple.jpg" class="d-flex w-100" alt="couple">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2025 Neha Umbre, all rights reserved</p>
+    </footer>
   </div>
 </body>
 
