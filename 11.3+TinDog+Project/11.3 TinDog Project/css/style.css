@@ -8,9 +8,11 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -25,4 +27,33 @@
 .profile-img {
   height: 100px;
   border-radius: 50%;
+}
+
+.btn-primary {
+  background: revert;
+  color: black;
+  border: white;
+  font-size: 20px;
+}
+
+.btn-primary:hover {
+  background: #d9d9d9;
+  color: black;
+}
+
+.btn-outline-secondary {
+  background: none;
+  color: white;
+  border: solid 1px;
+}
+
+.btn-outline-secondary:hover {
+  background: #fff;
+  color: black;
+}
+
+.icon-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
