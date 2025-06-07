@@ -166,10 +166,18 @@ alert(isGuest(name));
 
 - Inline JavaScript: Demonstrates triggering a JavaScript alert on page load using the 'onload' attribute.
 
+```<body onload="alert('Hello');">```
+
 - Internal JavaScript: Shows how to include JavaScript using a 
   `<script>` tag within the HTML, allowing for cleaner code.
+  ```
+  <script>
+        alert("Hellllllo");
+  </script>
+  ```
 
 - External JavaScript: Explains linking an external JavaScript file using the `<script>` tag with a 'src' attribute, demonstrating its independence from the HTML.
+
 
 - Script Tag Position: The instructor highlights that JavaScript should typically be placed at the _end_ of the `<body>` to ensure all HTML elements are loaded before manipulation, unlike CSS which goes in the `<head>`.
 
