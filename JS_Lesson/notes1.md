@@ -145,6 +145,7 @@ alert(isLeap);
 ```
 
 - GUESTLIST Code: ARRAYS
+
 ```
 var guestList = ["TOM", "JERRY", "WINNY", "JUICE"];
 var name = prompt("WHAT is YOur name?");
@@ -159,17 +160,20 @@ function isGuest(name) {
 }
 alert(isGuest(name));
 ```
+
 # DOM (Document Object Manipulation)
-* Project Setup: A new project folder named 'DOM' is created, along with a basic HTML   file called 'index.html.'
+
+- Project Setup: A new project folder named 'DOM' is created, along with a basic HTML file called 'index.html.'
 
 ### Methods of Adding JavaScript:
 
 - Inline JavaScript: Demonstrates triggering a JavaScript alert on page load using the 'onload' attribute.
 
-```<body onload="alert('Hello');">```
+`<body onload="alert('Hello');">`
 
-- Internal JavaScript: Shows how to include JavaScript using a 
+- Internal JavaScript: Shows how to include JavaScript using a
   `<script>` tag within the HTML, allowing for cleaner code.
+
   ```
   <script>
         alert("Hellllllo");
@@ -178,7 +182,71 @@ alert(isGuest(name));
 
 - External JavaScript: Explains linking an external JavaScript file using the `<script>` tag with a 'src' attribute, demonstrating its independence from the HTML.
 
-
 - Script Tag Position: The instructor highlights that JavaScript should typically be placed at the _end_ of the `<body>` to ensure all HTML elements are loaded before manipulation, unlike CSS which goes in the `<head>`.
 
 - Next Lesson Preview: The session concludes by previewing the next lesson focused on the Document Object Model (DOM) for selecting and manipulating HTML elements.
+
+# DOM exercise- run in console
+
+> document
+> document.firstElementChild and document.LastElementChild
+> var heading = document.lastElementChild.lastElementChild.querySelector("h1")
+> heading.innerHTML = "PINK"
+
+- Exercise by angela
+
+  > var list = document.getElementsByClassName("list")
+  > list[2].innerHTML = "YT";
+  > document.body.querySelector("h1").style.color ="yellow"
+  > document.body.querySelector("input").click() - this is a method that is invoked to click the checkbox
+  > document.firstElementChild.lastElementChild.querySelector("ul").lastElementChild.innerHTML = "Angela";
+
+- Accessing Properties and Methods:
+
+  - Properties describe attributes of elements, and methods represent actions.
+    The lecture emphasizes using dot notation for accessing and modifying these properties.
+
+#### Accessing properties and methods in the Document Object Model (DOM) is essential for manipulating HTML elements with JavaScript. Here's a breakdown:
+
+- Properties: Properties are attributes that describe an object. For example, an HTML button object might have properties like innerHTML, which determines the button's text, or style, which defines its CSS styles.
+
+- Methods: Methods are actions that an object can perform. For instance, click() is a method that simulates a mouse click on an element, leading to an action such as checking a checkbox.
+
+- Dot Notation: You access the properties and methods of an object using dot notation. For example, if you have an object named car, you can access its color with car.color or invoke a method like car.drive().
+
+`Getting Started: The DOM enables these interactions dynamically. When a web page loads, the browser converts the HTML structure into a tree of objects, allowing developers to programmatically access and manipulate elements.`
+
+> document.getElementsByTagName("li")[2].style.color = "cyan";
+> document.getElementsByTagName("li").length
+
+```
+document.getElementsByClassName
+document.getElementsById
+
+```
+
+There are different methods to access HTML elements.
+
+    1)getElementById()
+
+    2)querySelector()
+
+    3)getElementsByClassName()
+
+    4)getElementsByTagName()
+
+    5)querySelectorAll()
+
+- Adding and Deleting Elements using DOM Elements.
+
+  > Now, let’s discuss the methods that we can use for adding and deleting elements. There are various methods that help us to achieve this.
+
+      1)document.createElement()
+
+      2)document.removeChild()
+
+      3)document.appendChild()
+
+      4)document.replaceChild(new, old)
+
+      5)document.write()
