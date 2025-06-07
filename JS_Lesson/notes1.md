@@ -159,3 +159,18 @@ function isGuest(name) {
 }
 alert(isGuest(name));
 ```
+# DOM (Document Object Manipulation)
+* Project Setup: A new project folder named 'DOM' is created, along with a basic HTML   file called 'index.html.'
+
+### Methods of Adding JavaScript:
+
+- Inline JavaScript: Demonstrates triggering a JavaScript alert on page load using the 'onload' attribute.
+
+- Internal JavaScript: Shows how to include JavaScript using a 
+  `<script>` tag within the HTML, allowing for cleaner code.
+
+- External JavaScript: Explains linking an external JavaScript file using the `<script>` tag with a 'src' attribute, demonstrating its independence from the HTML.
+
+- Script Tag Position: The instructor highlights that JavaScript should typically be placed at the _end_ of the `<body>` to ensure all HTML elements are loaded before manipulation, unlike CSS which goes in the `<head>`.
+
+- Next Lesson Preview: The session concludes by previewing the next lesson focused on the Document Object Model (DOM) for selecting and manipulating HTML elements.

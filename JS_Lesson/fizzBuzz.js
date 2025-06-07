@@ -79,3 +79,50 @@ while (numberOfBottles >= 0) {
     numberOfBottles--;
     console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
 }
+
+// My Version
+var Bottles = 99;
+while (Bottles >= 0) {
+    var word = "bottles";
+    if (Bottles === 1) {
+        word = "bottle";
+    }
+    console.log(Bottles + " " + word + " of beer on the wall, " + Bottles + " " + word + " of beer. Take one down and pass it around, ");
+    Bottles--;
+    console.log(Bottles + " " + " bottles of beer on the wall.");
+}
+//improvised version
+var Bottles = 99;
+while (Bottles >= 1) {
+    var word = "bottles";
+    if (Bottles === 1) {
+        word = "bottle";
+    }
+    console.log(Bottles + " " + word + " of beer on the wall, " + Bottles + " " + word + " of beer. Take one down and pass it around, ");
+    Bottles--;
+    if (Bottles === 0) {
+        console.log("No More bottles of beer on the wall.");
+    }
+    else {
+        console.log(Bottles + " " + " bottles of beer on the wall.");
+    }
+}
+
+function FibGenerator(n) {
+    var output = [];
+    if (n === 1) {
+        output = [0];
+    }
+    else if (n === 2) {
+        output = [0, 1];
+    }
+    else {
+        output = [0, 1];
+        for (var i = 2; i < n; i++) {
+            output.push(output[output.length - 2] + output[output.length - 1]);
+        }
+    }
+    return output;
+}
+output = FibGenerator(8);
+console.log(output);
