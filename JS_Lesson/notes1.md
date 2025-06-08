@@ -316,3 +316,22 @@ document.querySelector("a").setAttribute("href", "www.bong.com");
 document.querySelector("a").getAttribute("href");
 > 'www.bong.com'
 ```
+
+# COMMAND LINE LESSON :
+> ls 
+
+> Ctrl + U : to clear the line
+
+> touch abc.txt: creates file
+
+> start abc.txt: opens file
+
+> rm abc.txt : remove file
+
+> pwd: print working directory
+
+> mkdir : create directory
+
+> rm -r dirName : removes directory
+
+[CMD practise](https://www.learnenough.com/command-line-tutorial)
