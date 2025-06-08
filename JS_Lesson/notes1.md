@@ -250,3 +250,69 @@ There are different methods to access HTML elements.
       4)document.replaceChild(new, old)
 
       5)document.write()
+
+> document.querySelector("li a");
+
+`<a href=​"https:​/​/​www.google.com" style=​"background:​ red;​ border-bottom-color:​ brown;​">​Google​</a>​`
+
+> document.querySelector("li a").style.background = "red";
+
+> document.querySelector("li.list"); // to select this `<li class="list">`
+
+#### difference between `querySelector` and `querySelectorAll`
+
+> document.querySelector("li.list"); // gives only first element
+> document.querySelectorAll("li.list"); // gives all elements
+
+```
+NodeList(3) [li.list, li.list, li.list]
+0 : li.list
+1 : li.list
+2 : li.list
+length:3
+```
+
+> Exercise : document.querySelector("li a").style.color ="red";
+
+#### Manipulating and Changing Styles of HTML Elements with Javascript
+
+`document.querySelector("button").style.backgroundColor ="yellow";`
+
+> In JS the style value should be given as string as `"yellow"` in above example
+> and the css property in CamelCase `backgroundColor` in above example
+
+> Refer this link for more styles [HTML DOM Style Object](https://www.w3schools.com/jsref/dom_obj_style.asp)
+
+> Add class by using `classList.add` and remove by `classList.remove`
+
+```
+document.querySelector("button").classList.add("invisible");
+
+document.querySelector("button").classList.remove("invisible");
+
+document.querySelector("button").classList.toggle("invisible"); //for both
+```
+
+> EXERCISE : `document.querySelector("h1").classList.toggle("huge");`
+
+#### Text Manipulation and the Text Content Property
+
+- This lecture focuses on how to manipulate text within HTML elements using two main properties: innerHTML and textContent.
+- innerHTML: Returns HTML code inside the selected tag
+
+  > This property allows you to retrieve and modify the HTML content inside an element's tags, including nested tags. For example, changing the innerHTML of an h1 element can include rich HTML structures like adding a strong tag.
+
+- textContent:Returns only text inside the selected tag
+  > In contrast, this property strictly returns the text inside an element without any HTML tags, ensuring only plain text is handled.
+
+#### Manipulating HTML Element Attributes:
+```
+document.querySelector("a").attributes
+> NamedNodeMap {0: href, href: href, length: 1}
+document.querySelector("a").getAttribute("href");
+>'https://www.google.com'
+document.querySelector("a").setAttribute("href", "www.bong.com");
+> undefined
+document.querySelector("a").getAttribute("href");
+> 'www.bong.com'
+```
