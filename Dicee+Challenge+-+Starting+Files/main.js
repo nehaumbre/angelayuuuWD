@@ -2,7 +2,7 @@
 function diceRoll() {
     var randomNumber = Math.random();
     var rolledValue = Math.floor(randomNumber * 6) + 1;
-    return rolledValue
+    return rolledValue;
 }
 
 function playerOneDiceRoll() {
@@ -27,13 +27,13 @@ function whoWins() {
     player2Score = parseInt(player2Data.match(/\d+/)[0], 10);
 
     if (player1Score > player2Score) {
-        document.querySelector("h1").innerText = "Player 1 Wins";
+        document.querySelector("h1").innerText = "🏆Player 1 Wins";
     }
     else if (player1Score < player2Score) {
-        document.querySelector("h1").innerText = "Player 2 Wins";
+        document.querySelector("h1").innerText = "Player 2 Wins🏆";
     }
     else {
-        document.querySelector("h1").innerText = "Its a Tie! ";
+        document.querySelector("h1").innerText = "Its a Tie!💀 ";
     }
 }
 
