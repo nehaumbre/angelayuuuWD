@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Dicee</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Refresh Me</h1>
+
+    <div class="dice">
+      <p>Player 1</p>
+      <img class="img1" src="images/dice1.png" />
+    </div>
+
+    <div class="dice">
+      <p>Player 2</p>
+      <img class="img2" src="images/dice2.png" />
+    </div>
+  </div>
+  <script>
+    function diceRoll() {
+      var randomNumber = Math.random();
+      var rolledValue = Math.floor(randomNumber * 6) + 1;
+      return rolledValue
+    }
+
+    function playerOneDiceRoll(){
+      var player1Roll = diceRoll();
+      document.querySelector(".img1").setAttribute("src", "images/dice"+ player1Roll +".png");
+    }
+
+    function playerTwoDiceRoll() {
+        var player2Roll = diceRoll();
+        document.querySelector(".img2").setAttribute("src", "images/dice" + player2Roll + ".png");
+      }
+
+      function rollUp(){
+        playerOneDiceRoll();
+        playerTwoDiceRoll();
+      }
+
+      function whoWins() {
+        player1Data = document.querySelector(".img1").getAttribute("src");
+        player2Data = document.querySelector(".img2").getAttribute("src");
+        player1Score = parseInt(player1Data.match(/\d+/)[0], 10); 
+        player2Score = parseInt(player2Data.match(/\d+/)[0], 10); 
+
+        if(player1Score > player2Score){
+          document.querySelector("h1").innerText = "Player 1 Wins";
+        }
+        else if (player1Score < player2Score) {
+          document.querySelector("h1").innerText = "Player 2 Wins";
+        }
+        else{
+          document.querySelector("h1").innerText = "Its a Tie! ";
+        }
+      }
+
+      let play = document.querySelector("h1");
+
+      play.onclick = function () {
+        rollUp();
+        whoWins();
+        }
+
+  </script>
+  <footer>www 🎲 App Brewery 🎲 com</footer>
+
+</body>
+
+</html>
