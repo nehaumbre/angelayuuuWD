@@ -306,6 +306,7 @@ document.querySelector("button").classList.toggle("invisible"); //for both
   > In contrast, this property strictly returns the text inside an element without any HTML tags, ensuring only plain text is handled.
 
 #### Manipulating HTML Element Attributes:
+
 ```
 document.querySelector("a").attributes
 > NamedNodeMap {0: href, href: href, length: 1}
@@ -318,7 +319,8 @@ document.querySelector("a").getAttribute("href");
 ```
 
 # COMMAND LINE LESSON :
-> ls 
+
+> ls
 
 > Ctrl + U : to clear the line
 
@@ -335,3 +337,34 @@ document.querySelector("a").getAttribute("href");
 > rm -r dirName : removes directory
 
 [CMD practise](https://www.learnenough.com/command-line-tutorial)
+
+# DOM PART 2
+
+- handleClickEvent is called without () [`handleClickEvent()`] not like this because this executes the
+  function upon page refresh but we want to execute it when we click on the button, therefore no braces.
+
+  ```
+  document.querySelector("button").addEventListener("click", handleClickEvent);
+  function handleClickEvent() {
+    alert("I was CLIKED 👩🏻");
+    }
+  ```
+
+- Anonymus function : the above code can be written using anonymous function
+
+  ```
+  document.querySelector("button").addEventListener("click", function () {
+    alert("I was CLIKED 👩🏻");
+  });
+  ```
+
+- Exercise: Make all buttons pop the same alert when clicked
+- Solution:
+
+  ```
+  for (i = 0; i < (document.querySelectorAll("button")).length; i++){
+  document.querySelectorAll("button")[i].addEventListener("click", function () {
+    alert("I was CLIKED 👩🏻");
+  });
+  }
+  ```
