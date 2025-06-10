@@ -368,3 +368,68 @@ document.querySelector("a").getAttribute("href");
   });
   }
   ```
+
+- Playing in console
+  > $0.innerHTML= "BLUEDART"
+
+```
+ $0.addEventListener("click", function () {
+    alert("I got clicked!");
+});
+
+$0.addEventListener("click", respondToClick);
+function respondToClick() {
+    alert("I got clicked!");
+}
+
+$0.addEventListener(input1, input2);
+function respondToClick() {
+    alert("I got clicked!");
+}
+/*where input1 = what event to listen to
+        input2 = what to do in response to that event*/
+
+```
+
+#### Higher Order functions: functions that can take other functions as inputs
+
+```
+function add(num1, num2){
+   return num1 + num2;
+}
+add(6,3)
+9
+function subtract(num1, num2){
+   return num1 - num2;
+}
+subtract(6,3)
+3
+function multiply(num1, num2){
+   return num1 * num2;
+}
+
+multiply(6,3)
+18
+function divide(num1, num2){
+   return num1 / num2;
+}
+
+divide(6,3)
+2
+// higher order function calculator with function operator as an input 
+
+function calculator(num1, num2, operator){
+   return operator(num1,num2);
+}
+
+
+calculator(6,3,add);
+9
+calculator(6,3,subtract);
+3
+calculator(6,3,multiply);
+18
+calculator(6,3,divide);
+2
+
+```
