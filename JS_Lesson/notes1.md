@@ -416,7 +416,7 @@ function divide(num1, num2){
 
 divide(6,3)
 2
-// higher order function calculator with function operator as an input 
+// higher order function calculator with function operator as an input
 
 function calculator(num1, num2, operator){
    return operator(num1,num2);
@@ -433,3 +433,123 @@ calculator(6,3,divide);
 2
 
 ```
+
+# JS Objects
+
+- Constructor function(not camel case but starts from capital letter) to create multiple objects of same/common properties
+
+```
+function BellBoy(name, age, hasWorkPermit, languages) {
+    this.name = name,
+    this.age = age,
+    this.hasWorkPermit = hasWorkPermit,
+    this.languages = languages
+}
+```
+
+- Initializing constructor function(also called factory)
+
+```
+var BellBoy1 = new BellBoy("Timmy", 19, true,["english", "french"]);
+
+```
+
+### Exercise By angela: create a factory to create objects for Housekeepers
+
+```
+function HouseKeeper(name, age, YearsOfExp, hasWorkPermit, hotelsWorkedAt) {
+    this.name = name,
+    this.age = age,
+    this.YearsOfExp = YearsOfExp
+    this.hassWorkPermit = hasWorkPermit,
+    this.hotelsWorkedAt = hotelsWorkedAt
+}
+
+
+var HouseKeeper1 = new HouseKeeper("Zoya", 26, 4, true, ["TAJ","WINEARY"]);
+var HouseKeeper2 = new HouseKeeper("NIJaK", 30, 7, true, ["TAJ","WINEARY","SEAMER", "O2VILLAS"]);
+               .
+               .
+               n
+console.log(HouseKeeper1);
+```
+
+### Methods: What if the BellBoy Moves the luggage. (We need to have this function in the object itself)
+
+```
+function moveLuggage(){
+    alert("May I take your Luggage?");
+    pickUpLuggage();
+    move();
+}
+```
+
+- Provide the name of function as new and after the colon(:) we put the anonymous function
+
+```
+var bellBoy1 = {
+  name: "Zoya",
+  age: 26,
+  YearsOfExp: 4,
+  hassWorkPermit: true,
+  moveLuggage: function () {
+    alert("May I take your Luggage?")
+    pickUpLuggage()
+    move()
+  },
+}
+```
+
+- call the `bellBoy1.moveLuggage();` to execute the function.
+- Exercise for cleaning function of Housekeeper
+
+```
+function HouseKeeper (name, age, YearsOfExp) {
+    this.name = name,
+    this.age = age,
+    this.YearsOfExp = YearsOfExp
+    this.clean = function () {
+      alert(" Cleaning in progress..");
+    }
+}
+```
+
+> Console Output:
+> var HouseKeeper4 = new HouseKeeper("NIJaK", 30, 7);
+> HouseKeeper4.clean()
+> // alert Comes as set in funtion
+> **[Note]** : HouseKeeper4.clean(); executes the function
+
+                HouseKeeper4.clean gets the value of function as **below**
+
+                {
+                   alert(" Cleaning in progress..");
+                }
+
+### Callback functions:
+
+=================================================================
+
+- **respondToKey** is a callback function
+
+```
+document.addEventListener("keydown", respondToKey(event));
+
+function respondToKey(event) {
+  console.log("key is pressed");
+}
+
+// try below in console
+======================================================================
+$0.addEventListener("click", function(event) {
+        console.log(event);
+})
+undefined
+VM406:2 PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
+VM406:2 PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
+VM406:2 PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
+
+```
+
+- here '**event**' the name can be anything you like ex. evt, et,...etc
+
