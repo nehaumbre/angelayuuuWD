@@ -1,26 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Colors</title>
-    <style>
-      body {
-        padding: 5rem;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- 1. Colors With Different Shades -->
-    <!-- https://tailwindcss.com/docs/customizing-colors  -->
 
-    <!-- 2. Background Colors -->
-    <!-- https://tailwindcss.com/docs/background-color -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <title>Colors</title>
+  <style>
+    body {
+      padding: 5rem;
+    }
+  </style>
+</head>
 
-    <!-- Text Underline -->
-    <!-- https://tailwindcss.com/docs/accent-color -->
-  </body>
+<body>
+  <!-- 1. Colors With Different Shades -->
+  <!-- https://tailwindcss.com/docs/customizing-colors  -->
+  <h1>1.Colors with different shades </h1>
+  <p class="text-lime-50 ">Tailwind</p>
+  <p class="text-lime-100 ">Tailwind</p>
+  <p class="text-lime-200 ">Tailwind</p>
+  <p class="text-lime-300 ">Tailwind</p>
+  <p class="text-lime-400 ">Tailwind</p>
+  <p class="text-lime-500 ">Tailwind</p>
+  <p class="text-lime-600 ">Tailwind</p>
+  <p class="text-lime-700 ">Tailwind</p>
+  <p class="text-lime-800 ">Tailwind</p>
+  <p class="text-lime-900 ">Tailwind</p>
+  <p class="text-lime-950 ">Tailwind</p>
+
+  <br />
+  <hr />
+  <br />
+  <h1>2.Colors with different background-color </h1>
+  <p class="text-white bg-rose-50">Tailwind</p>
+  <p class="text-white bg-rose-100 ">Tailwind</p>
+  <p class="text-white bg-rose-200">Tailwind</p>
+  <p class="text-white bg-rose-300">Tailwind</p>
+  <p class="text-white bg-rose-400">Tailwind</p>
+  <p class="text-white bg-rose-500">Tailwind</p>
+  <p class="text-white bg-rose-600">Tailwind</p>
+  <p class="text-white bg-rose-700">Tailwind</p>
+  <p class="text-white bg-rose-800">Tailwind</p>
+  <p class="text-white bg-rose-900">Tailwind</p>
+  <p class="text-white bg-rose-950">Tailwind</p>
+
+  <!-- 2. Background Colors -->
+  <!-- https://tailwindcss.com/docs/background-color -->
+
+  <br />
+  <hr />
+  <br />
+  <h1>3. Text Decoration</h1>
+  <p class="underline">Tailwind</p>
+  <p class="overline">Tailwind</p>
+  <p class="line-through decoration-rose-900">Tailwind</p>
+  <p class="no-underline">Tailwind</p>
+  <p class="text-purple-500 underline decoration-purple-900">Tailwind</p>
+
+  <!-- Text Underline -->
+  <!-- https://tailwindcss.com/docs/accent-color -->
+
+  <br>
+  <hr>
+  <br>
+  <!-- accent colors -->
+  <h1>4.Accent color</h1>
+  <input type="checkbox" checked>
+  <input type="checkbox" class="accent-yellow-300" name="check"/>
+  <input type="checkbox" class="accent-purple-900/75"> <!-- Use the color opacity modifier to control the opacity of an element's accent color: -->
+  <!-- adding hover -->
+  <input type="checkbox" class="accent-rose-900 hover:accent-rose-300" checked>
+  <br>
+  <hr>
+  <br>
+  <!-- https://tailwindcss.com/docs/accent-color -->
+</body>
+
 </html>
