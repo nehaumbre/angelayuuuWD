@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Container & Spacing</title>
-    <style>
-      body {
-        padding: 5rem;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Margin -->
-    <!-- https://tailwindcss.com/docs/margin -->
 
-    <!-- Arbitrary Spacing -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Container & Spacing</title>
+  <style>
+    body {
+      padding: 5rem;
+    }
+  </style>
+</head>
 
-    <!-- Padding -->
-    <!-- https://tailwindcss.com/docs/padding -->
+<body>
+  <!-- Margin -->
+  <!-- https://tailwindcss.com/docs/margin -->
+  <div class="container w-60 bg-stone-400">
+    <h2 class="bg-rose-200">1.Margin</h2>
+    <div class="m-5 bg-yellow-100">Margin All Around</div>
+    <div class="mx-5 bg-yellow-100">2. Margin X-axis</div clas="bg-yellow-100"> <!--control the horizontal margin-->
+    <div class="my-5 bg-yellow-100">3. Margin Y-axis</div class="bg-yellow-100"> <!--control the vertical margin-->
+    <div class="mt-5 bg-yellow-100">4. Margin Top</div clas="bg-yellow-100">
+    <div class="mr-6 bg-yellow-100">5. Margin right</div clas="bg-yellow-100">
+    <div class="ml-6 bg-yellow-100">6. Margin left</div class="bg-yellow-100">
+    <div class="mb-3 bg-yellow-100">7. Margin Bottom</div>
+    <div class="bg-pink-100">extra line to show Margin bottom</div>
+    <div class="-m-1 bg-lime-200">Using negative values</div>
+    <hr>
+    <div class="ms-8 me-8 bg-green-100">Using logical properties </div>
+    <div class="ms-8 bg-blue-300">margin-inline-start </div>
+    <div class="me-8 bg-blue-500">margin-inline-end</div>
+  </div>
+  <br>
+  <h2><strong>Adding space between children</strong></h2>
+  <div class="bg-blue-300 flex space-x-6">
+    <div class="bg-pink-200">01</div>
+    <div class="bg-pink-200">02</div>
+    <div class="bg-pink-200">03</div>
+  </div>
+  <div class="bg-red-400 flex space-y-3">
+    <div class="bg-pink-200">01</div>
+    <div class="bg-pink-200">02</div>
+  </div>
+  <br>
+  <h2><strong>Reversing children order</strong></h2>
+  <div class="flex flex-row-reverse space-x-5 space-x-reverse">
+    <!-- Similarly you can use flex-column-reverse and space-y-reverse-->
+    <!-- see what happens when u remove space-x/y-reverse : it is used to ensure that space is added to the correct side of each element-->
+    <div class="bg-yellow-200">01</div>
+    <div class="bg-pink-200">02</div>
+    <div class="bg-green-200">03</div>
+  </div>
+  <!-- Arbitrary Spacing -->
 
-    <!-- https://tailwindcss.com/docs/space -->
-    <!-- Space Between X -->
-    <!-- Space Between Y -->
-  </body>
+  <!-- Padding -->
+  <!-- https://tailwindcss.com/docs/padding -->
+
+  <!-- https://tailwindcss.com/docs/space -->
+  <!-- Space Between X -->
+  <!-- Space Between Y -->
+</body>
+
 </html>
