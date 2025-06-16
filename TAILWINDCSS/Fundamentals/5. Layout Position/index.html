@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
-  </head>
-  <body class="p-20">
-    <!-- https://tailwindcss.com/docs/position -->
-    <!-- https://tailwindcss.com/docs/display -->
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>TailwindCSS</title>
+</head>
+
+<body class="p-20">
+  <!-- https://tailwindcss.com/docs/position -->
+  <h1 class="mb-4">Position</h1>
+  <div class="relative w-1/2 h-40 bg-green-400">
+    <p>Relative</p>
+    <div class="absolute bottom-0 right-0 p-4 bg-teal-100">
+      <p>Absolute</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="relative w-1/2 h-40 bg-green-400">
+    <p>Relative</p>
+    <div class="absolute top-0 right-0 p-4 bg-teal-100">
+      <p>Absolute</p>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="relative w-1/2 h-40 bg-green-400">
+    <p>Relative</p>
+    <div class="absolute top-0 left-0 p-4 bg-teal-100">
+      <p>Absolute</p>
+    </div>
+  </div>
+
+  <br><br>
+  <div class="relative w-1/2 h-40 bg-green-400">
+    <p>Relative</p>
+    <div class="absolute bottom-0 left-0 p-4 bg-teal-100">
+      <p>Absolute</p>
+    </div>
+  </div>
+
+  <!-- <br><br>
+    <div class="relative w-1/2 h-40 bg-green-400">
+      <p>Relative</p>
+      <div class="absolute bottom-0 left-0 p-4 bg-teal-100">
+        <p>Absolute</p>
+      </div>
+    </div> -->
+  <!-- https://tailwindcss.com/docs/display -->
+
+  <h1 class="my-10">Display</h1>
+  <div class="bg-indigo-100 mb-10 p-10 w-[650px]">
+    <span class="inline bg-orange-200">
+      >This is display inline and will wrap normally
+    </span>
+    <span class="inline bg-blue-200">
+      >This is display inline and will wrap normally
+    </span>
+
+    <span class="inline-block bg-green-300 ">
+      >This is display inline-block and will not extend beyond its parent
+    </span>
+    <span class="inline-block bg-green-300 ">
+      >This is display inline-block and will not extend beyond its parent
+    </span>
+
+    <span class="block bg-red-300 ">
+      >This is display block and move to its own line
+    </span>
+    <span class="block bg-red-200 ">
+      >This is display block and move to its own line
+    </span>
+
+    <span class="hidden">
+      >This is display hidden and will not display at all
+    </span>
+  </div>
+</body>
+
 </html>
