@@ -4,16 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Borders</title>
   </head>
   <body>
     <!-- Border Width & Colors -->
     <!-- https://tailwindcss.com/docs/border-width -->
+     <div class="border-2 bg-stone-200 border-stone-500 m-10">
+      <div class="m-3 w-96 p-6 border">Border All Round</div>
+      <div class="m-3 w-96 p-5 border-4">Border Width</div>
+      <div class="m-3 w-96 p-6 border-4 border-red-600">Border colored</div>
+      <div class="m-3 w-96 p-6 border-x-4 border-teal-600">Border X axis colored</div>
+      <div class="m-3 w-96 p-6 border-y-4 border-rose-900">Border Y axis colored</div>
+      <div class="m-3 w-96 p-6 border-l-4 border-pink-600">Border Left colored</div>
+      <div class="m-3 w-96 p-6 border-r-4 border-pink-600">Border Right colored</div>
+      <div class="m-3 w-96 p-6 border-t-4 border-pink-600">Border Top colored</div>
+      <div class="m-3 w-96 p-6 border-b-4 border-pink-600">Border Bottom colored</div>
+     </div>
 
     <!-- Border Radius -->
     <!-- https://tailwindcss.com/docs/border-radius -->
+    <div class="border-2 bg-stone-200 border-stone-500 m-10">
+      <div class="m-3 w-96 p-6 border rounded-sm border-indigo-600">border-radius-small</div>
+      <div class="m-3 w-96 p-6 border rounded-md border-green-600">border-radius-medium</div>
+      <div class="m-3 w-96 p-6 border rounded-xl border-red-600">border-radius-xl</div>
+      <div class="m-3 w-96 p-6 border rounded-full border-pink-600">border-radius-full</div>
+      <div class="m-3 w-96 p-6 border-4 rounded-t-xl bg-rose-100 border-red-600">border-top-xl</div>
+      <div class="m-3 w-96 p-6 border-4 rounded-r-xl bg-rose-100 border-red-600">border-right-xl</div>
+      <div class="m-3 w-96 p-6 border-4 rounded-b-xl bg-rose-100 border-red-600">border-bottom-xl</div>
+      <div class="m-3 w-96 p-6 border-4 rounded-l-xl bg-rose-100 border-red-600">border-left-xl</div>
+      <!-- Specific Sides -->
+      <div class="m-3 w-96 p-6 border-4 rounded-tr-xl bg-teal-100 border-teal-300">border-topRight-xl</div>
+      <div class="m-3 w-96 p-6 border-4 rounded-tl-xl bg-teal-100 border-teal-300">border-topLeft-xl</div>
+      <div class="m-3 w-96 p-6 border-4 rounded-br-xl bg-teal-100 border-teal-300">border-BottomRight-xl</div>
+      <div class="m-3 w-96 p-6 border-4 rounded-bl-xl bg-teal-100 border-teal-300">border-BottomLeft-xl</div>
+     </div>
 
-    <!-- Specific Sides -->
+    
   </body>
 </html>
