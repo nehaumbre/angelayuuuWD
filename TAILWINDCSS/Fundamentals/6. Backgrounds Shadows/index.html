@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Backgrounds & Shadows</title>
-  </head>
-  <body>
-    <!-- Background Images -->
-    <!-- https://tailwindcss.com/docs/background-image -->
 
-    <!-- Shadows -->
-    <!-- https://tailwindcss.com/docs/drop-shadow -->
-    <!-- I know we didn't cover flexbox, but it's just for demo purposes -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Backgrounds & Shadows</title>
+</head>
 
-    <!-- Gradients -->
-    <!-- https://tailwindcss.com/docs/gradient-color-stops -->
-  </body>
+<body>
+  <!-- Background Images -->
+  <!-- https://tailwindcss.com/docs/background-image -->
+  <!-- <div class="h-screen w-full bg-blue-400 bg-cover bg-no-repeat" style="background-image:url('family.jpg');"></div> -->
+
+  <!-- Shadows -->
+  <!-- https://tailwindcss.com/docs/drop-shadow -->
+  <!-- I know we didn't cover flexbox, but it's just for demo purposes -->
+  <div class="flex flex-wrap">
+    <div class="mt-10 ml-4 p-3 w-[400px] shadow-sm "> Shadow small </div>
+    <div class="mt-10 ml-4 p-3 w-[400px] shadow-md "> Shadow Medium </div>
+    <div class="mt-10 ml-4 p-3 w-[400px] shadow-lg "> Shadow large </div>
+    <div class="mt-10 ml-4 p-3 w-[400px] shadow-xl "> Shadow XL </div>
+    <div class="mt-10 ml-4 p-3 w-[400px] shadow-none "> Shadow none </div>
+    <div class="mt-10 ml-4 p-3 w-[400px] shadow-md/25 "> Changing the opacity </div>
+    <div class="mt-10 ml-4 p-3 w-[400px] shadow-xl/50 "> Changing the opacity </div>
+    <div class="mt-10 ml-4 p-3 w-[400px] shadow-lg  shadow-cyan-500/90 "> Shadow color/opacity </div>
+    <div class="mt-10 ml-4 p-3 w-[400px] shadow-inner  shadow-indigo-500 "> inner Shadow color/opacity </div>
+  </div>
+
+  <!-- Gradients -->
+  <!-- https://tailwindcss.com/docs/gradient-color-stops -->
+
+  <div class="h-40 bg-gradient-to-r from-rose-600 to-yellow-300 m-10 text-center p-30">Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Ipsum voluptates quasi aut praesentium qui iure obcaecati
+    assumenda dolorem iusto ratione deleniti, voluptas consectetur quia tempora in.
+    Nihil praesentium dolorem assumenda.</div>
+  <div class="h-40 bg-gradient-to-l from-stone-500 via-green-100 to-yellow-400 m-10 text-center p-30">Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Ipsum voluptates quasi aut praesentium qui iure obcaecati
+      assumenda dolorem iusto ratione deleniti, voluptas consectetur quia tempora in.
+      Nihil praesentium dolorem assumenda.</div>
+</body>
+
 </html>
