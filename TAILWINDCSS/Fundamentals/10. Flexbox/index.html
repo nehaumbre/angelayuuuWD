@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Flex</title>
-  </head>
-  <body>
-    <!-- https://tailwindcss.com/docs/flex -->
 
-    <!-- https://tailwindcss.com/docs/flex-direction#column -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Flex</title>
+</head>
 
-    <!-- https://tailwindcss.com/docs/justify-items -->
+<body>
+  <!-- https://tailwindcss.com/docs/flex -->
+  <div class="border m-10">
+    <ul class="flex">
+      <li class="bg-teal-100 m-5 p-5 flex-1">01</li>
+      <li class="bg-teal-100 m-5 p-5 flex-auto">02</li>
+      <li class="bg-teal-100 m-5 p-5">03</li>
+      <li class="bg-teal-100 m-5 p-5">04</li>
+      <li class="bg-teal-100 m-5 p-5">05</li>
+    </ul>
+  </div>
 
-    <!-- https://tailwindcss.com/docs/order -->
+  <!-- https://tailwindcss.com/docs/flex-direction#column -->
+  <div class="border m-10">
+    <ul class="flex flex-col">
+      <li class="bg-pink-200 m-5 p-5">01</li>
+      <li class="bg-pink-200 m-5 p-5">02</li>
+      <li class="bg-pink-200 m-5 p-5">03</li>
+      <li class="bg-pink-200 m-5 p-5">04</li>
+      <li class="bg-pink-200 m-5 p-5">05</li>
+    </ul>
+  </div>
 
-    <!-- Grow and shrink -->
-    <!-- https://tailwindcss.com/docs/flex-shrink -->
-  </body>
+  <!-- https://tailwindcss.com/docs/justify-items -->
+  <div class="border m-10">
+    <ul class="flex justify-around">
+      <!-- <p>justify-end/start/center/between/around</p> -->
+      <li class="bg-red-200 m-5 p-5">01</li>
+      <li class="bg-red-200 m-5 p-5">02</li>
+      <li class="bg-red-200 m-5 p-5">03</li>
+      <li class="bg-red-200 m-5 p-5">04</li>
+      <li class="bg-red-200 m-5 p-5">05</li>
+    </ul>
+  </div>
+
+  <!-- https://tailwindcss.com/docs/order -->
+  <div class="border m-10">
+    <ul class="flex justify-around">
+      <li class="bg-indigo-300 m-5 p-5 order-5">01-a</li>
+      <li class="bg-blue-300 m-5 p-5 order-1">02-b</li>
+      <li class="bg-purple-300 m-5 p-5 order-3">03-c</li>
+      <li class="bg-green-300 m-5 p-5 order-2">04-d</li>
+      <li class="bg-stone-300 m-5 p-5 order-4">05-e</li>
+    </ul>
+  </div>
+
+  <!-- Grow and shrink -->
+  <!-- https://tailwindcss.com/docs/flex-shrink -->
+  <div class="border m-10">
+    <ul class="flex w-100">
+      <li class="p-5 m-3 w-64 bg-cyan-300 flex-none">01-a no grow or shrink</li>
+      <li class="p-5 m-3 w-64 bg-cyan-300 flex-initial">02-b no grow only shrink</li>
+      <li class="p-5 m-3 w-90 bg-cyan-300 flex-auto">03-c can grow/shrnk</li>
+      <!-- <li class="p-5 m-3 w-64 bg-cyan-300 flex-1">04-d</li>
+      <li class="p-5 m-3 w-64 bg-cyan-300">05-e</li>
+      <li class="p-5 m-3 w-64 bg-cyan-300">06-f</li>
+      <li class="p-5 m-3 w-64 bg-cyan-300">07-g</li> -->
+    </ul>
+  </div>
+</body>
+
 </html>
