@@ -1,0 +1,11 @@
+# Ignore logs
+*.log
+
+# Ignore depndencies
+node_modules/
+
+# Ignore environment config
+
+.env
+# Ignore folders
+TailwindCLI/
